@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/CSS/main.css">
+  <script src="../main.js" defer></script><script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+  <title>Art Gallery</title>
+</head>
+<body>
+    <div class="h-container">
+      <div class="header">
+        <div class="header-content">
+          <h1>Welcome To Click'Em Art Gallery!</h1>
+          <h2>The only gallery that WANTS you to touch the art!</h2>
+          <h3>Feel free to click around on some of our featured artwork 
+            from <span><h2 id="school">Chicago Art Institute</h2></span> and check out the cool details!
+          </h3>
+        </div>
+      </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <!-- Footer -->
+    <footer>
+        <div class="bottom">
+            <div class="c_right">&copy;Austin Bates, 2023</div>
+        </div>
+    </footer>
+</body>
+</html>
